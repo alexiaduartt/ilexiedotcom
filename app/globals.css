@@ -1,26 +1,157 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+--background:#faf9f5;
+
+--foreground:#171717;
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+
+* {
+
+box-sizing:border-box;
+
+scroll-behavior:smooth;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+
+html {
+
+background:#faf9f5;
+
 }
+
+
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+margin:0;
+
+
+background:
+
+radial-gradient(
+circle at 15% 20%,
+rgba(185,149,216,.18),
+transparent 25%
+),
+
+
+radial-gradient(
+circle at 85% 30%,
+rgba(223,240,182,.35),
+transparent 25%
+),
+
+
+#faf9f5;
+
+
+color:#171717;
+
+
+}
+
+
+
+.font-cookie {
+
+
+font-family:var(--font-cookie), cursive;
+
+
+}
+
+
+
+.font-serif {
+
+
+font-family:Georgia, serif;
+
+
+}
+
+
+
+.font-mono {
+
+
+font-family:var(--font-geist-mono), monospace;
+
+
+}
+
+
+
+::selection {
+
+
+background:#b995d8;
+
+color:white;
+
+
+}
+
+
+
+a {
+
+
+transition:.3s ease;
+
+
+}
+
+
+
+a:hover {
+
+
+transform:translateY(-2px);
+
+
+}
+
+
+
+.soft-purple {
+
+
+background:#eee3f7;
+
+
+}
+
+
+
+.soft-green {
+
+
+background:#e5f2c5;
+
+
+}
+
+
+
+.soft-mix {
+
+
+background:
+linear-gradient(
+135deg,
+#eee3f7,
+#e5f2c5
+);
+
+
 }

@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Como a conversa funciona",
+    "paragraphs": [
+      "O painel React mantém o histórico em memória na aba. Ao enviar uma pergunta, compartilha até nove mensagens recentes com a rota de servidor. A base de conhecimento é o arquivo estruturado que também alimenta as páginas do portfólio: projetos, formação, pesquisas, extensão e competências.",
+      "A rota separa instruções de sistema e mensagens do visitante. O modelo recebe somente conteúdo público e não tem ferramentas, acesso a arquivos, navegação ou ações administrativas. A resposta aparece como texto, sem execução de HTML, e as referências são links locais selecionados pelo servidor."
+    ]
+  },
+  {
+    "title": "Modelo e decisões técnicas",
+    "paragraphs": [
+      "A integração usa Groq Chat Completions via fetch, sem SDK adicional e sem fallback automático para serviços pagos. OpenAI permanece como alternativa apenas por configuração explícita. O modelo é configurado no servidor, sem um nome fixo: a escolha deve considerar disponibilidade, qualidade em português, custo e latência. A configuração exige validação real antes de apresentar a geração como ativa. A contextualização direta atende ao tamanho atual da base, sem embeddings ou banco vetorial."
+    ]
+  },
+  {
+    "title": "Segurança, privacidade e custos",
+    "paragraphs": [
+      "Chaves ficam apenas no servidor. A API aceita perguntas de até 1.200 caracteres, histórico de até nove mensagens, contexto de conversa de até 8.000 caracteres e corpo de até 24 KB. Há timeout de 20 segundos para o provedor e teto de 1.024 tokens de saída no Groq e 600 na alternativa OpenAI por chamada. Não há registro de conversas no código e somente o adaptador OpenAI utiliza store: false; a retenção pelo Groq segue a política do provedor.",
+      "Em produção, Redis REST mantém limites compartilhados: seis tentativas por minuto por origem de rede e um teto diário global configurável (100 chamadas por padrão). O serviço falha fechado se o controle não estiver configurado ou acessível. O limite local em memória é exclusivo do desenvolvimento. O orçamento monetário precisa também ser limitado na conta do provedor."
+    ]
+  },
+  {
+    "title": "Carregamento e falhas",
+    "paragraphs": [
+      "O painel verifica a configuração, mostra geração em andamento e trata indisponibilidade, limite de uso, falha do provedor e timeout. Uma pergunta com falha volta ao campo de texto para nova tentativa. A conversa pode ser limpa, e o diálogo oferece navegação por teclado e fechamento com Escape."
+    ]
+  },
+  {
+    "title": "Testes e limites reais",
+    "paragraphs": [
+      "A suíte automatizada cobre validação de entradas, separação de papéis, limites, corpo excessivo, indisponibilidade e erros do provedor usando transporte simulado. Ela não certifica qualidade das respostas de um modelo real. A validação com credencial, a revisão manual de acessibilidade e a avaliação de prompt injection continuam necessárias antes da publicação.",
+      "Instruções de sistema reduzem respostas fora do contexto, mas não eliminam alucinações. O histórico enviado pelo navegador não é uma fonte confiável. Não envie dados pessoais ou confidenciais. store: false não substitui a política de retenção do provedor. Referências locais são sugestões de leitura por correspondência de assunto, não citações verificadas de cada frase."
+    ]
+  },
+  {
+    "title": "Próximas melhorias",
+    "paragraphs": [
+      "Avaliar respostas com perguntas reais e casos adversariais, medir qualidade e latência sem guardar conversas pessoais e considerar recuperação de conteúdo somente se a base crescer. Validar orçamento, limites e comportamento de rede no ambiente de hospedagem escolhido."
+    ]
+  }
+]

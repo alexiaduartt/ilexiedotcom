@@ -1,0 +1,206 @@
+{
+  "profile": {
+    "name": "Alexia Alves",
+    "headline": "Desenvolvendo software, explorando inteligência artificial e criando experiências digitais.",
+    "intro": "Sou estudante de Engenharia de Software no IFPE, com experiência em desenvolvimento frontend, UI/UX, infraestrutura e segurança. Também desenvolvo pesquisas sobre aplicações e uso ético da Inteligência Artificial.",
+    "about": "Minha trajetória conecta desenvolvimento, design e segurança. Gosto de entender como as coisas funcionam — da interface que acolhe uma pessoa à infraestrutura que sustenta uma aplicação. Na pesquisa, investigo como a inteligência artificial pode contribuir para a educação com responsabilidade.",
+    "facts": [
+      "Engenharia de Software · IFPE",
+      "MouraTech · Segurança e Infraestrutura",
+      "Pesquisa em IA aplicada à educação",
+      "Inglês avançado · C1"
+    ],
+    "education": [
+      {
+        "course": "Técnico em Administração",
+        "institution": "Escola Técnica Estadual Edson Mororó Moura",
+        "period": "2020–2022",
+        "status": "concluído",
+        "source": "currículo público em /resume.pdf"
+      },
+      {
+        "course": "Engenharia de Software",
+        "institution": "IFPE — Campus Belo Jardim",
+        "status": "em andamento",
+        "source": "informações fornecidas pela autora e currículo público em /resume.pdf"
+      }
+    ],
+    "github": "https://github.com/alexiaduartt",
+    "linkedin": "https://www.linkedin.com/in/alexia-alves-525a12304/",
+    "email": "lexajosielly@gmail.com",
+    "resume": "/resume.pdf"
+  },
+  "projects": [
+    {
+      "slug": "esteira-devsecops",
+      "title": "Esteira DevSecOps Open Source",
+      "category": "Segurança + automação",
+      "symbol": "↳",
+      "color": "violet",
+      "summary": "Segurança integrada ao ciclo de desenvolvimento. Uma esteira construída em equipe no MouraTech com ferramentas open source.",
+      "context": "Projeto desenvolvido em equipe durante o MouraTech, na trilha de Segurança da Informação e Infraestrutura.",
+      "problem": "Incorporar verificações de segurança ao ciclo de desenvolvimento e organizar a análise dos alertas produzidos por diferentes ferramentas.",
+      "objective": "Integrar ferramentas open source em uma esteira DevSecOps, conectando automação, CI/CD e acompanhamento de vulnerabilidades.",
+      "technologies": [
+        "GitHub Actions",
+        "GitLeaks",
+        "Semgrep",
+        "Trivy",
+        "OWASP ZAP",
+        "DefectDojo",
+        "Grafana",
+        "Docker"
+      ],
+      "contribution": "Participação na construção em equipe, governança das análises DAST, classificação de alertas e organização dos processos de desenvolvimento, com práticas de revisão de código e colaboração.",
+      "challenges": "Integrar ferramentas com diferentes formatos de saída e organizar a triagem de alertas para apoiar o trabalho da equipe.",
+      "architecture": "GitLeaks → GitHub Actions → Build/Testes → Semgrep → Trivy → OWASP ZAP → DefectDojo → Grafana.",
+      "status": "Projeto de formação desenvolvido em equipe. Código disponível no repositório público; não há demonstração hospedada informada.",
+      "repository": "https://github.com/alexiaduartt/Esteira-DevSecOps-Open-Source"
+    },
+    {
+      "slug": "soc-open-source",
+      "title": "SOC Open Source",
+      "category": "Infraestrutura + detecção",
+      "symbol": "◎",
+      "color": "periwinkle",
+      "summary": "Um Centro de Operações de Segurança com ferramentas abertas para monitoramento, detecção e resposta a incidentes.",
+      "context": "Projeto desenvolvido durante o MouraTech, na trilha de Segurança da Informação e Infraestrutura.",
+      "problem": "Conectar monitoramento, inteligência de ameaças e mecanismos de resposta em um ambiente de segurança integrado.",
+      "objective": "Implementar um SOC com ferramentas open source e explorar práticas de detecção e resposta a incidentes.",
+      "technologies": [
+        "Wazuh",
+        "Suricata",
+        "MISP",
+        "Docker",
+        "Active Response",
+        "MITRE ATT&CK"
+      ],
+      "contribution": "Configuração de ambientes virtualizados, testes de invasão no contexto do projeto, criação de regras de detecção, monitoramento e integração de ferramentas de segurança.",
+      "challenges": "Articular regras de detecção, visibilidade do ambiente e resposta a incidentes entre diferentes ferramentas.",
+      "architecture": "Ambientes virtualizados e ferramentas de monitoramento e inteligência de ameaças, integradas no contexto de um SOC. Wazuh, Suricata e MISP compõem a base tecnológica informada.",
+      "status": "Projeto de formação. Repositório e demonstração pública não informados.",
+      "repository": null
+    },
+    {
+      "slug": "gradus-flow",
+      "title": "Gradus Flow",
+      "category": "Desenvolvimento + experiência",
+      "symbol": "↗",
+      "color": "plum",
+      "summary": "Gestão de Trabalhos de Conclusão de Curso do IFPE, com atuação em interface, usabilidade e evolução do sistema.",
+      "context": "Sistema de gerenciamento de Trabalhos de Conclusão de Curso do IFPE.",
+      "problem": "Apoiar a gestão de TCCs e a evolução da experiência de uso de um sistema acadêmico.",
+      "objective": "Contribuir para a manutenção e evolução do sistema, com atenção à interface, à usabilidade, à infraestrutura e à segurança.",
+      "technologies": [
+        "Next.js",
+        "React",
+        ".NET",
+        "Docker",
+        "Oracle Cloud Infrastructure"
+      ],
+      "contribution": "Desenvolvimento frontend, UI/UX, melhorias de interface e usabilidade, infraestrutura, segurança, análise e manutenção de código e preparação da hospedagem na OCI.",
+      "challenges": "Evoluir a interface e manter o sistema considerando diferentes camadas técnicas e a preparação do ambiente de hospedagem.",
+      "architecture": "Frontend em Next.js e React, backend em .NET e uso de Docker. A hospedagem na Oracle Cloud Infrastructure está em preparação.",
+      "status": "Em evolução e preparação para hospedagem na OCI. Não apresentado como publicado em produção na nuvem.",
+      "repository": null
+    },
+    {
+      "slug": "ask-ilexie",
+      "title": "Ask ILexie",
+      "category": "IA aplicada + interfaces",
+      "symbol": "✳",
+      "color": "lavender",
+      "summary": "Uma interface de conversa para explorar minha trajetória. Contexto verificado, integração com LLM e limites explícitos.",
+      "context": "Assistente desenvolvido neste portfólio para apresentar projetos, pesquisas e trajetória de Alexia Alves.",
+      "problem": "Permitir que visitantes explorem informações do portfólio por perguntas, mantendo clareza sobre o que é conhecido e as limitações da IA.",
+      "objective": "Conectar uma interface acessível a um modelo de linguagem por uma API de servidor, usando os mesmos dados públicos exibidos no site.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Groq API",
+        "Redis REST",
+        "CSS",
+        "Tailwind CSS"
+      ],
+      "contribution": "Projeto integrado ao próprio portfólio: interface de conversa, base de conhecimento estruturada, rota de servidor, validação, controle de uso e documentação técnica.",
+      "challenges": "Equilibrar contexto útil, custo, privacidade e prevenção de respostas inventadas. Instruções de sistema orientam o modelo, mas não garantem ausência de alucinações ou resistência absoluta a prompt injection.",
+      "architecture": "Visitante → painel React → POST /api/ask → validação e limites compartilhados → base pública em JSON + instruções → Groq Chat Completions → resposta em texto e referências locais.",
+      "status": "Integração implementada; ativação depende de credenciais e configuração no servidor. A geração com um modelo real exige validação após essa configuração.",
+      "repository": "https://github.com/alexiaduartt/ilexiedotcom"
+    }
+  ],
+  "research": [
+    {
+      "title": "Ensino de Línguas com Inteligência Artificial: o uso do Wayground na era da Educação 4.0",
+      "period": "2025–2026",
+      "status": "Apresentada no CONIC 2026",
+      "institution": "IFPE — Campus Belo Jardim",
+      "advisor": "Profa. Dra. Karlucy Farias de Sousa",
+      "description": "Aplicações de IA no ensino de inglês, com foco no Wayground (antigo Quizizz). Uma investigação sobre personalização, feedback, gamificação e desafios éticos.",
+      "activities": [
+        "Revisão bibliográfica em nove bases de dados e análise de 18 artigos científicos.",
+        "Exploração prática das funcionalidades de IA do Wayground.",
+        "Apresentação no XXI Congresso de Iniciação Científica do IFPE, em setembro de 2026."
+      ]
+    },
+    {
+      "title": "Inteligência Artificial Generativa no Aprendizado de Inglês: usos e percepções éticas discentes",
+      "period": "Pesquisa atual",
+      "status": "Em desenvolvimento",
+      "institution": "IFPE — Campus Belo Jardim",
+      "advisor": "Profa. Dra. Karlucy Farias de Sousa",
+      "description": "Usos de ChatGPT, Copilot, Gemini e outras ferramentas por estudantes de Engenharia de Software. O estudo investiga finalidades de uso, autoria, transparência e responsabilidade.",
+      "activities": [
+        "Métodos mistos, com questionários e entrevistas semiestruturadas previstos na metodologia.",
+        "Revisão bibliográfica, planejamento metodológico e refinamento dos instrumentos de coleta.",
+        "Preparação da documentação para submissão ao Comitê de Ética em Pesquisa. Sem resultados de coleta apresentados."
+      ]
+    }
+  ],
+  "extension": {
+    "title": "Meu Espaço na Tech",
+    "subtitle": "Introdução ao Desenvolvimento Web para Mulheres",
+    "description": "Sou cofundadora e integrante da equipe de planejamento e ensino. O projeto busca aproximar meninas e mulheres da tecnologia por meio de uma formação introdutória em desenvolvimento web.",
+    "contribution": "Participo da organização, da preparação de materiais e das atividades pedagógicas.",
+    "plan": "Planejamento para 2027: duas turmas de 30 participantes, com 30 horas de formação por turma. As turmas ainda não aconteceram.",
+    "topics": [
+      "HTML",
+      "CSS",
+      "Fundamentos da web",
+      "Responsividade",
+      "Acessibilidade",
+      "Privacidade digital"
+    ]
+  },
+  "skills": [
+    {
+      "title": "Desenvolvimento",
+      "items": "JavaScript, TypeScript, React, Next.js, HTML, CSS, Python, Java e .NET"
+    },
+    {
+      "title": "UI/UX",
+      "items": "Design de interfaces, experiência do usuário, responsividade e acessibilidade"
+    },
+    {
+      "title": "Segurança e infraestrutura",
+      "items": "Docker, CI/CD, DevSecOps, GitHub Actions, análise de segurança e Oracle Cloud Infrastructure"
+    },
+    {
+      "title": "Inteligência Artificial aplicada",
+      "items": "ChatGPT, GitHub Copilot, Codex, Antigravity, Claude e Gemini como apoio à pesquisa, programação, análise e documentação"
+    },
+    {
+      "title": "Pesquisa",
+      "items": "Revisão bibliográfica, métodos mistos, análise de dados e ética em Inteligência Artificial"
+    }
+  ],
+  "suggestions": [
+    "quais projetos você desenvolveu?",
+    "qual é a sua formação?",
+    "quais são seus livros favoritos?",
+    "que tipo de música você gosta?",
+    "de onde você é?",
+    "quais são seus planos pro futuro?"
+  ]
+}

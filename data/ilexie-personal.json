@@ -1,0 +1,48 @@
+{
+  "source": "informações compartilhadas e autorizadas pela Alexia para a conversa da ILexie",
+  "updatedAt": "2026-11-03",
+  "age": { "years": 21, "asOf": "2026-11-03", "birthdayMonth": 1, "birthdayDay": 26, "nextBirthday": "2027-01-26", "nextBirthdayAge": 22 },
+  "academicProgress": { "currentSemester": 7, "asOf": "2026-11-03", "expectedTransitionDate": "2026-12-15", "nextSemester": 8, "lastSemester": 8, "transitionConfirmed": false, "note": "a autora estima que o 7º período termina em 15 de dezembro de 2026; a data ainda não está confirmada" },
+  "zodiacSign": "aquário",
+  "hometown": "Belo Jardim, Pernambuco",
+  "currentCity": "Belo Jardim, Pernambuco",
+  "connectionToHome": "sou bem bairrista e amo meu pernambuco",
+  "hobbies": ["ler", "assistir a filmes", "viajar, especialmente observar as paisagens pela janela do carro; gosto mais do caminho do que de chegar ao destino"],
+  "books": {
+    "favoriteAuthor": "Stephen King",
+    "favorites": [
+      { "title": "trilogia da Papoula", "author": "R. F. Kuang", "reason": "personagens fortes, conflitos políticos e revoluções" },
+      { "title": "It: A Coisa", "author": "Stephen King" },
+      { "title": "saga Jogos Vorazes", "author": "Suzanne Collins" }
+    ]
+  },
+  "music": {
+    "artists": ["Olivia Rodrigo", "Hayley Williams, do Paramore", "Amy Winehouse", "Not for Radio, de María Zardoya", "Mazzy Star", "Radiohead", "Lana Del Rey"],
+    "favoriteAlbums": [
+      { "title": "Frank", "artist": "Amy Winehouse" },
+      { "title": "So Tonight That I Might See", "artist": "Mazzy Star" },
+      { "title": "Thirteen Tales of Love and Revenge", "artist": "The Pierces, dupla de irmãs" }
+    ]
+  },
+  "movies": {
+    "favorites": ["10 Coisas que Eu Odeio em Você", "Alice no País das Maravilhas (2010), de Tim Burton", "Coraline", "o primeiro Pitch Perfect"],
+    "favoriteGenre": "terror; tenho um carinho especial pelo gênero",
+    "favoriteHorrorMovies": ["Marcas da Maldição (Incantation)", "A Lenda do Cavaleiro sem Cabeça (Sleepy Hollow), com Johnny Depp e Christina Ricci"]
+  },
+  "games": {
+    "favorites": ["A Plague Tale: Innocence", "A Plague Tale: Requiem", "Resident Evil", "Alice: Madness Returns", "trilogia Tomb Raider com Tomb Raider, Rise of the Tomb Raider e Shadow of the Tomb Raider"],
+    "personalMemory": "chorei muito jogando A Plague Tale: Innocence e Requiem"
+  },
+  "personality": {
+    "selfDescription": "sou calma e calada com quem não conheço, mas me solto quando o assunto é filmes, livros, arte ou tecnologia",
+    "friendsDescription": "minhas amigas me acham engraçada e criativa quando se trata de estética"
+  },
+  "technology": {
+    "origin": "sempre tive curiosidade sobre como as pessoas desenvolviam as coisas; até os hacks de dinheiro infinito no Subway Surfers me deixavam curiosa",
+    "currentInterests": ["cibersegurança", "desenvolvimento frontend", "uso ético da inteligência artificial nessas áreas"]
+  },
+  "futurePlans": {
+    "masters": "pretendo fazer mestrado em uma das áreas que me interessam: cibersegurança, frontend ou uso ético de IA; ainda não escolhi uma área específica",
+    "teaching": "penso em ser professora universitária, porque senti falta de figuras femininas como tutoras durante meus anos de faculdade"
+  }
+}

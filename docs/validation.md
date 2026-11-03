@@ -12,6 +12,8 @@ Auditoria: nenhuma vulnerabilidade nas dependências de produção; a auditoria 
 
 O segredo HMAC foi gerado apenas no arquivo local privado. Redis real, variáveis na Vercel, integração main, push e novo deploy permanecem pendentes enquanto as credenciais obrigatórias e o acesso à produção não forem confirmados. Não se deve interpretar build local aprovada como publicação concluída. O guia está em `docs/publicar-vercel.md`.
 
+Atualização após configurar o Upstash Free: todas as variáveis locais obrigatórias estão preenchidas. O teste real do Redis confirmou os quatro limites com 429, compartilhamento global entre IPs diferentes e atomicidade em duas requisições simultâneas (somente uma admitida). Foram dez chamadas EVAL e zero chamadas Groq, usando namespace exclusivo de QA. Os contadores de teste foram removidos. Ainda falta verificar as variáveis de Production na Vercel antes de integrar a main.
+
 ## Preferências pessoais autorizadas
 
 A base `data/ilexie-personal.json` contém os gostos, origem, personalidade e planos fornecidos pela autora para a conversa. É incorporada no servidor de `/api/ask`; os detalhes não foram adicionados às seções visíveis da página. Idade permanece vinculada a novembro de 2026, sem inferir aniversário; mestrado e docência são planos. As sugestões iniciais agora combinam trajetória e interesses. Os 16 testes, TypeScript e ESLint passaram. A qualidade dessas novas respostas pessoais ainda requer avaliação com o modelo real.

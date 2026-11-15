@@ -9,6 +9,7 @@
   {
     "title": "Modelo e decisões técnicas",
     "paragraphs": [
+      "A Ask ILexie é uma aplicação baseada em LLM: integra um modelo de linguagem existente ao portfólio. Não treinei nem ajustei um modelo próprio. O servidor envia a base pública em JSON junto às instruções de sistema em cada chamada, sem etapa de recuperação de documentos ou busca vetorial (RAG).",
       "A integração usa Groq Chat Completions via fetch, sem SDK adicional e sem fallback automático para serviços pagos. OpenAI permanece como alternativa apenas por configuração explícita. O modelo é configurado no servidor, sem um nome fixo: a escolha deve considerar disponibilidade, qualidade em português, custo e latência. A configuração exige validação real antes de apresentar a geração como ativa. A contextualização direta atende ao tamanho atual da base, sem embeddings ou banco vetorial."
     ]
   },

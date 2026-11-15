@@ -51,7 +51,7 @@
         "Grafana",
         "Docker"
       ],
-      "contribution": "Participação na construção em equipe, governança das análises DAST, classificação de alertas e organização dos processos de desenvolvimento, com práticas de revisão de código e colaboração.",
+      "contribution": "Participação na construção em equipe, governança das análises DAST, classificação de alertas e organização dos processos de desenvolvimento, com práticas de revisão de código e colaboração. Uso de Azure Boards para acompanhar atividades e Azure Repos para colaborar no código durante o MouraTech.",
       "challenges": "Integrar ferramentas com diferentes formatos de saída e organizar a triagem de alertas para apoiar o trabalho da equipe.",
       "architecture": "GitLeaks → GitHub Actions → Build/Testes → Semgrep → Trivy → OWASP ZAP → DefectDojo → Grafana.",
       "status": "Projeto de formação desenvolvido em equipe. Código disponível no repositório público; não há demonstração hospedada informada.",
@@ -75,7 +75,7 @@
         "Active Response",
         "MITRE ATT&CK"
       ],
-      "contribution": "Configuração de ambientes virtualizados, testes de invasão no contexto do projeto, criação de regras de detecção, monitoramento e integração de ferramentas de segurança.",
+      "contribution": "Configuração de ambientes virtualizados, testes de invasão no contexto do projeto, criação de regras de detecção, monitoramento e integração de ferramentas de segurança. Colaboração em equipe com Azure Boards e Azure Repos durante o MouraTech.",
       "challenges": "Articular regras de detecção, visibilidade do ambiente e resposta a incidentes entre diferentes ferramentas.",
       "architecture": "Ambientes virtualizados e ferramentas de monitoramento e inteligência de ameaças, integradas no contexto de um SOC. Wazuh, Suricata e MISP compõem a base tecnológica informada.",
       "status": "Projeto de formação. Repositório e demonstração pública não informados.",
@@ -92,15 +92,20 @@
       "problem": "Apoiar a gestão de TCCs e a evolução da experiência de uso de um sistema acadêmico.",
       "objective": "Contribuir para a manutenção e evolução do sistema, com atenção à interface, à usabilidade, à infraestrutura e à segurança.",
       "technologies": [
+        "TypeScript",
         "Next.js",
         "React",
-        ".NET",
+        "Tailwind CSS",
+        "C#",
+        "ASP.NET Core",
+        "PostgreSQL",
+        "Entity Framework Core",
         "Docker",
         "Oracle Cloud Infrastructure"
       ],
       "contribution": "Desenvolvimento frontend, UI/UX, melhorias de interface e usabilidade, infraestrutura, segurança, análise e manutenção de código e preparação da hospedagem na OCI.",
       "challenges": "Evoluir a interface e manter o sistema considerando diferentes camadas técnicas e a preparação do ambiente de hospedagem.",
-      "architecture": "Frontend em Next.js e React, backend em .NET e uso de Docker. A hospedagem na Oracle Cloud Infrastructure está em preparação.",
+      "architecture": "Frontend em Next.js, React, TypeScript e Tailwind CSS, integrado a uma API REST em C# com ASP.NET Core. Backend organizado em Domain, Application, Infra e WebApi, com Entity Framework Core e PostgreSQL. Autenticação JWT, armazenamento compatível com S3 via Garage no desenvolvimento, testes automatizados e infraestrutura com Docker. A hospedagem na Oracle Cloud Infrastructure está em preparação.",
       "status": "Em evolução e preparação para hospedagem na OCI. Não apresentado como publicado em produção na nuvem.",
       "repository": null
     },
@@ -110,7 +115,7 @@
       "category": "IA aplicada + interfaces",
       "symbol": "✳",
       "color": "lavender",
-      "summary": "Uma interface de conversa para explorar minha trajetória. Contexto verificado, integração com LLM e limites explícitos.",
+      "summary": "Assistente de IA para explorar minha trajetória, com integração a LLM via API, contexto estruturado e controle de uso no servidor.",
       "context": "Assistente desenvolvido neste portfólio para apresentar projetos, pesquisas e trajetória de Alexia Alves.",
       "problem": "Permitir que visitantes explorem informações do portfólio por perguntas, mantendo clareza sobre o que é conhecido e as limitações da IA.",
       "objective": "Conectar uma interface acessível a um modelo de linguagem por uma API de servidor, usando os mesmos dados públicos exibidos no site.",
@@ -125,7 +130,7 @@
       ],
       "contribution": "Projeto integrado ao próprio portfólio: interface de conversa, base de conhecimento estruturada, rota de servidor, validação, controle de uso e documentação técnica.",
       "challenges": "Equilibrar contexto útil, custo, privacidade e prevenção de respostas inventadas. Instruções de sistema orientam o modelo, mas não garantem ausência de alucinações ou resistência absoluta a prompt injection.",
-      "architecture": "Visitante → painel React → POST /api/ask → validação e limites compartilhados → base pública em JSON + instruções → Groq Chat Completions → resposta em texto e referências locais.",
+      "architecture": "Visitante → painel React → POST /api/ask → validação e limites compartilhados com Redis → base pública em JSON + instruções de sistema → Groq Chat Completions (ou OpenAI Responses por configuração explícita) → resposta em texto e referências locais. Contextualização direta, sem busca vetorial ou treinamento de modelo.",
       "status": "Integração implementada; ativação depende de credenciais e configuração no servidor. A geração com um modelo real exige validação após essa configuração.",
       "repository": "https://github.com/alexiaduartt/ilexiedotcom"
     }
@@ -176,7 +181,7 @@
   "skills": [
     {
       "title": "Desenvolvimento",
-      "items": "JavaScript, TypeScript, React, Next.js, HTML, CSS, Python, Java e .NET"
+      "items": "JavaScript, TypeScript, C#, SQL, React, Next.js, Tailwind CSS, HTML, CSS, Python, Java, ASP.NET Core, Entity Framework Core e PostgreSQL"
     },
     {
       "title": "UI/UX",
@@ -185,6 +190,18 @@
     {
       "title": "Segurança e infraestrutura",
       "items": "Docker, CI/CD, DevSecOps, GitHub Actions, análise de segurança e Oracle Cloud Infrastructure"
+    },
+    {
+      "title": "Ferramentas e colaboração",
+      "items": "Azure DevOps (Boards e Repos), Jira, Trello e GitHub. Uso de Boards e Repos em projetos da faculdade e no MouraTech, incluindo SOC Open Source e Esteira DevSecOps."
+    },
+    {
+      "title": "Métodos de trabalho",
+      "items": "Vivência com Scrum e Kanban na organização de atividades e no desenvolvimento em equipe."
+    },
+    {
+      "title": "Integração com LLMs",
+      "items": "Ask ILexie: integração via API com Groq e suporte a OpenAI por configuração, instruções de sistema, contexto estruturado em JSON, histórico de conversa, validação de entradas, limites de uso com Redis e testes automatizados."
     },
     {
       "title": "Inteligência Artificial aplicada",
